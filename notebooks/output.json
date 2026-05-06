@@ -1,0 +1,23 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Marathon Preparation\n\nHere is a one-day meal plan for an athlete preparing for marathon competition with carbohydrate loading:\n\n* **Calorie Target:** Approximately 3,500 calories\n* **Macronutrient Breakdown:** Protein (140g), Fat (95g), Carbs (520g)\n\n## Meal Plan:\n\n* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with banana (150g), honey (30g), and whole milk (240g). Side of whole wheat toast (60g) with almond butter (20g).\n    * Protein: 18g, Fat: 12g, Carbs: 110g\n\n* **Mid-Morning Snack (10:00 AM):** Energy bar (65g) and sports drink (500ml).\n    * Protein: 10g, Fat: 8g, Carbs: 75g\n\n* **Lunch (1:00 PM):** Grilled chicken breast (150g), brown rice (150g cooked), steamed sweet potato (200g), and mixed vegetables (100g) with olive oil (15ml).\n    * Protein: 45g, Fat: 12g, Carbs: 95g\n\n* **Afternoon Snack (3:30 PM):** Bagel (85g) with cream cheese (30g) and sliced turkey (50g). Orange juice (250ml).\n    * Protein: 18g, Fat: 10g, Carbs: 90g\n\n* **Pre-Dinner Snack (5:00 PM):** Greek yogurt (200g) with granola (40g) and blueberries (80g).\n    * Protein: 20g, Fat: 8g, Carbs: 75g\n\n* **Dinner (7:00 PM):** Lean ground beef (150g) with pasta (200g cooked), marinara sauce (150g), and garlic bread (60g with 15ml olive oil).\n    * Protein: 35g, Fat: 20g, Carbs: 95g\n\n* **Evening Snack (9:30 PM):** White bread sandwich (80g) with jam (40g) and honey (20g). Coconut water (250ml).\n    * Protein: 4g, Fat: 5g, Carbs: 80g\n\n---\n\n**Hydration Strategy:** Drink water consistently throughout the day (3-4 liters minimum) and include sports drinks during and after training sessions for electrolyte replacement and sustained energy.\n\nThis meal plan emphasizes complex and simple carbohydrates for glycogen loading, adequate protein for muscle recovery, and strategic timing to support marathon training performance.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "72 kg",
+        "goal": "Marathon preparation with carbohydrate loading and optimal hydration for 3,500+ calorie intake",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan totals 3,500+ calories with carbohydrate emphasis (55-65% of total calories)",
+        "Includes specific hydration strategy with fluid intake targets throughout the day",
+        "Provides 4-5 meals/snacks distributed across the day with realistic, compact meal descriptions",
+        "Meals are practical for an athlete and support marathon endurance training"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 3,500+ calories with emphasis on carbohydrate loading and hydration strategies"
+    },
+    "score": 7,
+    "reasoning": "The solution successfully meets all three mandatory requirements with explicit daily totals, macronutrient breakdown, and detailed meal specifications with timing. The carbohydrate percentage (59%) falls within the required 55-65% range, and hydration targets are clearly stated. However, the solution has notable deficiencies: mathematical inconsistencies in macro calculations, an impractical late-evening snack that contradicts marathon training best practices, and suboptimal meal timing distribution. These issues are secondary to the mandatory requirements but represent meaningful practical flaws in execution."
+  }
+]

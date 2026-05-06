@@ -1,17 +1,18 @@
 [
   {
-    "task": "Parse an AWS CloudFormation template and extract all resource logical IDs that have type 'AWS::S3::Bucket'",
-    "format": "python",
-    "solution_criteria": "Function should take a CloudFormation JSON/dict as input and return a list of logical IDs for S3 bucket resources. Should handle nested structures correctly."
-  },
-  {
-    "task": "Create a JSON policy document that allows a principal to perform s3:GetObject and s3:PutObject actions on all objects in an S3 bucket named 'my-data-bucket'",
-    "format": "json",
-    "solution_criteria": "Valid IAM policy JSON with correct Statement structure, Effect set to 'Allow', Action array containing both s3:GetObject and s3:PutObject, and Resource ARN matching all objects in the specified bucket."
-  },
-  {
-    "task": "Write a regex pattern to validate and extract AWS IAM role ARNs from a text string",
-    "format": "regex",
-    "solution_criteria": "Pattern should match valid IAM role ARNs in format 'arn:aws:iam::ACCOUNT-ID:role/ROLE-NAME' and capture the account ID and role name components."
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon preparation with carbohydrate loading and optimal hydration for 3,500+ calorie intake",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan totals 3,500+ calories with carbohydrate emphasis (55-65% of total calories)",
+      "Includes specific hydration strategy with fluid intake targets throughout the day",
+      "Provides 4-5 meals/snacks distributed across the day with realistic, compact meal descriptions",
+      "Meals are practical for an athlete and support marathon endurance training"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 3,500+ calories with emphasis on carbohydrate loading and hydration strategies"
   }
 ]
