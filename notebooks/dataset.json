@@ -1,18 +1,17 @@
 [
   {
-    "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "72 kg",
-      "goal": "Marathon preparation with carbohydrate loading and optimal hydration for 3,500+ calorie intake",
-      "restrictions": "None"
-    },
-    "solution_criteria": [
-      "Meal plan totals 3,500+ calories with carbohydrate emphasis (55-65% of total calories)",
-      "Includes specific hydration strategy with fluid intake targets throughout the day",
-      "Provides 4-5 meals/snacks distributed across the day with realistic, compact meal descriptions",
-      "Meals are practical for an athlete and support marathon endurance training"
-    ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 3,500+ calories with emphasis on carbohydrate loading and hydration strategies"
+    "task": "Create a JSON policy document that allows read-only access to a specific S3 bucket named 'my-data-bucket' for any IAM user or role",
+    "format": "json",
+    "solution_criteria": "Must include correct IAM policy structure with Version, Statement array, Effect set to Allow, appropriate S3 actions for read-only access (s3:GetObject, s3:ListBucket), and Resource ARN pointing to the specified bucket"
+  },
+  {
+    "task": "Write a Python function that takes an AWS EC2 instance ID as input and returns a properly formatted CloudWatch metric filter name following the pattern 'ec2-{instance-id}-cpu-utilization'",
+    "format": "python",
+    "solution_criteria": "Function accepts string parameter, performs basic input validation for EC2 instance ID format (i- prefix), returns correctly formatted string, handles edge cases like None or empty input"
+  },
+  {
+    "task": "Create a regular expression that matches valid AWS Lambda function names according to AWS naming requirements",
+    "format": "regex",
+    "solution_criteria": "Regex must match strings that are 1-64 characters long, contain only letters, numbers, hyphens, and underscores, and do not start or end with hyphens. Should reject invalid names and accept valid ones"
   }
 ]

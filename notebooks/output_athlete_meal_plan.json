@@ -1,0 +1,24 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Marathon Preparation (Vegetarian Carbohydrate Loading)\n\n**Athlete Profile:** 178cm, 68kg\n**Goal:** Marathon preparation with carbohydrate loading for endurance\n\n* **Calorie Target:** Approximately 3,200 calories\n* **Macronutrient Breakdown:** Protein (110g), Fat (80g), Carbs (480g)\n\n---\n\n## **Meal Plan:**\n\n* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with banana (150g), raisins (40g), and almond milk (250ml). Side of whole wheat toast (60g) with peanut butter (20g).\n    * Protein: 15g, Fat: 12g, Carbs: 95g\n\n* **Mid-Morning Snack (10:00 AM):** Energy bar (70g) and orange juice (300ml).\n    * Protein: 8g, Fat: 8g, Carbs: 65g\n\n* **Lunch (1:00 PM):** Lentil and vegetable pasta (200g cooked pasta + 150g lentil-based sauce), mixed green salad (100g) with olive oil dressing (15ml), and whole grain bread (80g).\n    * Protein: 28g, Fat: 15g, Carbs: 110g\n\n* **Afternoon Snack (4:00 PM):** Banana (150g) with Greek yogurt (200g) and granola (40g).\n    * Protein: 18g, Fat: 8g, Carbs: 85g\n\n* **Dinner (7:00 PM):** Chickpea curry (250g chickpeas + 150g vegetables in coconut milk sauce) served over white rice (180g cooked), with naan bread (60g).\n    * Protein: 28g, Fat: 20g, Carbs: 110g\n\n* **Evening Snack (9:30 PM):** Rice cakes (50g) with honey (25g) and almonds (25g).\n    * Protein: 7g, Fat: 9g, Carbs: 35g\n\n---\n\n**Key Features:**\n- High carbohydrate content (480g) supports glycogen storage for marathon endurance\n- Adequate protein (110g) supports muscle recovery and repair\n- Emphasis on plant-based proteins: legumes, yogurt, nuts, and grains\n- Budget-friendly options using dried legumes and grains\n- Timing spreads carbs throughout the day for optimal energy availability",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178",
+        "weight": "68",
+        "goal": "Marathon preparation with carbohydrate loading for endurance",
+        "restrictions": "Vegetarian"
+      },
+      "solution_criteria": [
+        "Meal plan contains exactly 4-5 meals distributed throughout the day",
+        "Total daily calories meet high-endurance athlete needs (approximately 2800-3200 kcal)",
+        "Carbohydrates comprise 55-65% of total calories with emphasis on complex carbs",
+        "All meals are vegetarian-compliant with no meat, poultry, or fish",
+        "Plan includes adequate protein (1.2-1.6g per kg body weight) from vegetarian sources"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) who requires high caloric intake and carbohydrate loading, with specific dietary restrictions (vegetarian) to verify the meal plan balances macro/micronutrient needs within the single-day format"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all three mandatory requirements with precision: daily caloric total is clearly stated (3,200 kcal), macronutrient breakdown is provided (110g protein, 80g fat, 480g carbs), and every meal includes exact foods, portions, and timing. The carbohydrate loading is well-designed at 60% of calories with appropriate complex carb sources. Protein adequately supports recovery at 1.62g/kg body weight, and all foods are vegetarian-compliant. However, the solution violates the secondary criterion of 4-5 meals by providing 6 eating occasions. While this doesn't trigger automatic failure (as it's not a mandatory requirement), it represents a clear deviation from the stated specification. The meal plan is otherwise well-constructed and practical."
+  }
+]
