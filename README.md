@@ -9,7 +9,7 @@ python3 -m venv .venv
 .venv/bin/pip install -e .
 .venv/bin/python -m ipykernel install --user \
     --name=anthropic-api-101 --display-name "Python (anthropic-api-101)"
-cp .env.example .env   # then paste your ANTHROPIC_API_KEY
+cp .env.example .env   # then paste your ANTHROPIC_API_KEY and VOYAGE_API_KEY
 ```
 
 Then `jupyter lab` and pick the `Python (anthropic-api-101)` kernel.
