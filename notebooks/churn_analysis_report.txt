@@ -1,0 +1,184 @@
+====================================================================================================
+STREAMING SERVICE CHURN ANALYSIS - EXECUTIVE SUMMARY
+====================================================================================================
+
+DATASET OVERVIEW:
+  • Total Customers: 500
+  • Churned Customers: 193 (38.6%)
+  • Retained Customers: 307 (61.4%)
+
+====================================================================================================
+TOP CHURN DRIVERS (RANKED BY IMPORTANCE)
+====================================================================================================
+
+1. TOTAL VIEWING HOURS (Importance: 0.238)
+   • Churned customers avg: 66.58
+   • Retained customers avg: 83.22
+   • Difference: -20.0%
+   • Statistical significance: p = 0.000000 ***
+
+2. AVERAGE SESSION DURATION (Importance: 0.216)
+   • Churned customers avg: 49.42
+   • Retained customers avg: 57.76
+   • Difference: -14.4%
+   • Statistical significance: p = 0.000001 ***
+
+3. UNIQUE TITLES WATCHED (Importance: 0.159)
+   • Churned customers avg: 19.45
+   • Retained customers avg: 23.74
+   • Difference: -18.1%
+   • Statistical significance: p = 0.000000 ***
+
+4. TOP GENRE (Importance: 0.114)
+
+5. BINGE WATCHING SESSIONS (Importance: 0.112)
+   • Churned customers avg: 6.17
+   • Retained customers avg: 7.69
+   • Difference: -19.7%
+   • Statistical significance: p = 0.000000 ***
+
+6. CUSTOMER SERVICE INTERACTIONS (Importance: 0.091)
+   • Churned customers avg: 3.18
+   • Retained customers avg: 2.49
+   • Difference: +27.7%
+   • Statistical significance: p = 0.000000 ***
+
+7. MONTHLY COST (Importance: 0.036)
+   • Churned customers avg: 11.18
+   • Retained customers avg: 12.11
+   • Difference: -7.7%
+   • Statistical significance: p = 0.004680 **
+
+8. SUBSCRIPTION TIER (Importance: 0.035)
+
+====================================================================================================
+DETAILED FEATURE ANALYSIS
+====================================================================================================
+
+1. ENGAGEMENT PATTERNS:
+
+   TotalViewingHoursLastMonth:
+   • Churned - Mean: 66.58 hours, Median: 67.00, Std: 31.24
+   • Retained - Mean: 83.22 hours, Median: 79.90, Std: 32.35
+   • Churned 25th percentile: 44.30
+   • Churned 75th percentile: 89.30
+
+   BingeWatchingSessionsLastMonth:
+   • Churned - Mean: 6.17 sessions, Median: 6.00, Std: 2.91
+   • Retained - Mean: 7.69 sessions, Median: 8.00, Std: 3.11
+   • Churned 25th percentile: 4.00
+   • Churned 75th percentile: 8.00
+
+   NumberOfUniqueTitlesWatchedLastMonth:
+   • Churned - Mean: 19.45 titles, Median: 20.00, Std: 8.97
+   • Retained - Mean: 23.74 titles, Median: 23.00, Std: 9.19
+   • Churned 25th percentile: 13.00
+   • Churned 75th percentile: 26.00
+
+   AverageSessionDurationMinutes:
+   • Churned - Mean: 49.42 minutes, Median: 48.50, Std: 17.67
+   • Retained - Mean: 57.76 minutes, Median: 56.50, Std: 18.57
+   • Churned 25th percentile: 36.80
+   • Churned 75th percentile: 62.20
+
+2. CUSTOMER SERVICE ANALYSIS:
+
+   • Churned customers: 3.18 interactions (avg)
+   • Retained customers: 2.49 interactions (avg)
+   • Difference: +27.7%
+
+   Churn rate by number of interactions:
+   • 0 interactions: 0.0% churn rate (n=8)
+   • 1 interactions: 27.3% churn rate (n=66)
+   • 2 interactions: 24.8% churn rate (n=137)
+   • 3 interactions: 40.7% churn rate (n=162)
+   • 4 interactions: 56.7% churn rate (n=90)
+   • 5 interactions: 62.1% churn rate (n=29)
+   • 6 interactions: 75.0% churn rate (n=8)
+
+3. SUBSCRIPTION TIER ANALYSIS:
+
+   Basic Tier:
+   • Total customers: 207
+   • Churned: 90 (43.5%)
+   • Avg viewing hours: 70.56
+   • Avg monthly cost: $7.99
+
+   Standard Tier:
+   • Total customers: 210
+   • Churned: 83 (39.5%)
+   • Avg viewing hours: 80.62
+   • Avg monthly cost: $12.99
+
+   Premium Tier:
+   • Total customers: 83
+   • Churned: 20 (24.1%)
+   • Avg viewing hours: 82.68
+   • Avg monthly cost: $17.99
+
+4. CONTENT PREFERENCE (GENRE) ANALYSIS:
+
+   • Horror: 52.3% churn rate (n=44)
+   • Thriller: 48.3% churn rate (n=29)
+   • Action: 44.6% churn rate (n=74)
+   • Romance: 41.8% churn rate (n=55)
+   • SciFi: 40.5% churn rate (n=42)
+   • Drama: 35.3% churn rate (n=102)
+   • Comedy: 33.0% churn rate (n=100)
+   • Documentary: 25.9% churn rate (n=54)
+
+====================================================================================================
+HIGH-RISK CUSTOMER SEGMENTS
+====================================================================================================
+
+HIGH RISK CRITERIA:
+   • Low viewing hours: < 61.3 hours/month
+   • High customer service: >= 3 interactions/year
+
+Segment 1 - LOW ENGAGEMENT:
+   • Size: 165 customers (33.0%)
+   • Churn rate: 49.7%
+
+Segment 2 - HIGH CUSTOMER SERVICE INTERACTIONS:
+   • Size: 289 customers (57.8%)
+   • Churn rate: 48.8%
+
+Segment 3 - CRITICAL RISK (Low engagement + High CS):
+   • Size: 157 customers (31.4%)
+   • Churn rate: 52.2%
+
+====================================================================================================
+STRATEGIC RECOMMENDATIONS
+====================================================================================================
+
+1. INCREASE USER ENGAGEMENT (Highest Priority):
+   • Implement personalized content recommendations
+   • Send targeted notifications for low-engagement users
+   • Create curated playlists based on viewing history
+   • Introduce gamification elements (watch streaks, badges)
+
+2. IMPROVE CUSTOMER SERVICE:
+   • Proactively reach out to high-interaction customers
+   • Identify and resolve common pain points
+   • Implement self-service solutions to reduce interaction needs
+   • Train support team on retention strategies
+
+3. SUBSCRIPTION TIER OPTIMIZATION:
+   • Offer incentives for Basic users to upgrade to Premium
+   • Highlight Premium benefits (lower churn observed)
+   • Consider loyalty discounts for long-term Basic subscribers
+
+4. CONTENT STRATEGY:
+   • Expand Documentary content (lowest churn genre)
+   • Improve Horror and Thriller content quality/selection
+   • Monitor genre preferences and adjust library accordingly
+
+5. EARLY WARNING SYSTEM:
+   • Flag users with viewing hours < 50/month
+   • Alert when customer service interactions > 3/year
+   • Monitor session duration and frequency trends
+   • Implement automated retention campaigns for at-risk users
+
+====================================================================================================
+END OF REPORT
+====================================================================================================
